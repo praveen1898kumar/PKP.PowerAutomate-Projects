@@ -60,3 +60,6 @@ This Power Automate flow automates routine tasks based on the current day of the
 
 7. **Enhanced Communication in Teams:**
    - Utilizing Teams for communication ensures that relevant information is shared in a platform familiar to team members. This integration enhances communication within the organization, creating a centralized hub for updates and collaboration.
+
+## NOTES:
+Update "manifest.json" with your offical email id.
