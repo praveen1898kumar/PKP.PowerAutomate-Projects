@@ -1,45 +1,40 @@
-# Automated Leave Approval Workflow with Power Automate
+# Flow Title: Weekly TimeSheet Reminder
 
-## Introduction
-In today's dynamic work environment, streamlining and automating processes can significantly enhance efficiency and reduce manual workload. The creation of a Power Automate flow for leave approval from a manager is a prime example of leveraging technology to simplify and expedite a common workplace procedure. This flow combines the capabilities of Microsoft Forms, Power Automate, and email notifications to create a seamless and automated leave approval process.
+## Overview:
+This workflow is created to automate the process of sending a weekly reminder message via Microsoft Teams every Friday. The purpose is to prompt team members to submit their timesheets promptly. The flow ensures consistent and timely reminders to enhance adherence to the timesheet submission process.
 
-## Flow Overview
-1. **Microsoft Form Webhook Creation:**
-   - The process begins with the creation of a Microsoft Form, serving as the medium for employees to submit leave requests.
-   - A webhook is established to capture the responses from the form and trigger subsequent actions.
+## Details Support Document:
 
-2. **Retrieve Response Details:**
-   - Once a leave request is submitted through the form, the flow retrieves the response details using the webhook trigger.
-   - This ensures that all relevant information, such as the leave duration, reason, and employee details, is available for further processing.
+### 1. Trigger:
+- The flow is triggered to start every Friday, initiating the reminder process for timesheet submission.
 
-3. **Initiate Approval Process:**
-   - The flow then kicks off an approval process, where the manager is notified to review and approve or reject the leave request.
-   - Using Power Automate's built-in approval actions, the manager can seamlessly make decisions within their preferred communication platform.
+### 2. Teams Message Composition:
+- A Teams message is dynamically composed, containing a friendly reminder and any relevant details or links related to timesheet submission.
+- The message is designed to be informative yet concise, encouraging prompt action.
 
-4. **Wait for Manager's Response:**
-   - The flow patiently waits for the manager's response, monitoring the approval status.
+### 3. Recipients:
+- The Teams message is sent to a designated channel or group where team members responsible for timesheet submission can receive the reminder.
 
-5. **Email Notification Based on Approval Decision:**
-   - If the manager approves the leave request, an email notification is automatically sent to the employee with an approval comment.
-   - In case of rejection, another email is triggered, informing the employee of the decision along with a rejection comment.
+### 4. Scheduling:
+- The flow is scheduled to run every Friday at a specific time, ensuring that the reminder is consistently sent out on a weekly basis.
 
-## Benefits of the Automated Leave Approval Workflow:
-1. **Time Efficiency:**
-   - The automated workflow significantly reduces the time required for leave approval. Managers can swiftly review requests and make decisions without the need for manual intervention.
+### 5. Benefits:
 
-2. **Error Reduction:**
-   - Automation minimizes the risk of errors associated with manual data entry or communication. The flow ensures accurate and consistent processing of leave requests.
+- **Consistency:**
+  - Ensures a regular and consistent weekly reminder, reducing the likelihood of team members forgetting to submit their timesheets.
 
-3. **Enhanced Visibility:**
-   - The use of Power Automate provides real-time visibility into the status of leave requests. Employees and managers can easily track the progress of each request within the workflow.
+- **Timeliness:**
+  - Weekly reminders on Fridays align with the end of the workweek, providing ample time for team members to complete and submit their timesheets.
 
-4. **Improved Accountability:**
-   - With a standardized approval process, there is increased accountability for both employees and managers. All actions and decisions are recorded, promoting transparency and traceability.
+- **Automation:**
+  - Eliminates the need for manual reminders, saving time and ensuring that reminders are sent out reliably every week.
 
-5. **Flexibility and Accessibility:**
-   - The flow can be accessed and managed from various devices, ensuring flexibility for both employees and managers, especially in remote or distributed work environments.
+- **Improved Compliance:**
+  - Encourages a culture of timely timesheet submissions, leading to improved compliance with company policies.
 
-6. **Scalability:**
-   - As the organization grows, the automated leave approval workflow can scale effortlessly to handle a larger volume of requests without a proportional increase in administrative overhead.
+### 6. Future Enhancements:
+- Integrate adaptive scheduling based on regional workweek patterns or holidays.
+- Incorporate interactive elements within the Teams message, allowing team members to acknowledge receipt or ask questions related to timesheet submission.
 
-In conclusion, the automated leave approval workflow with Power Automate optimizes the leave management process, fostering a more efficient and transparent environment within the organization. This integration of technology enhances the overall employee experience and allows managers to focus on strategic tasks rather than routine administrative duties.
+## Conclusion:
+The Weekly TimeSheet Reminder flow facilitates a proactive approach to timesheet management by automating the process of sending timely reminders via Microsoft Teams. The benefits include improved consistency, timeliness, and overall compliance with timesheet submission policies. Future enhancements can further customize the reminder system to meet evolving needs and user preferences.
